@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SafiFees</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Mot de passe</string>
+    <string name="action_sign_in">Connexion</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Bienvenue !"</string>
+    <string name="invalid_username">Email non valide</string>
+    <string name="invalid_password">Le mot de passe doit contenir plus de 5 caractères</string>
+    <string name="login_failed">"Connexion échouée"</string>
+    <string name="savePassword_text">Mémoriser les identifiants</string>
+    <string name="forgotPassword_text">Mot de passe oublié ?</string>
+    <string name="sendTicket_text">Envoyer</string>
+    <string name="logosafi_text">logoSafi</string>
+    <string name="ticket">Envoyer un ticket au Responsable de Secteur</string>
+    <string name="action_settings">Settings</string>
+    <string name="image">image</string>
+    <string name="menu_home">Tableau de bord</string>
+    <string name="menu_addFees">Ajouter des frais</string>
+    <string name="menu_sheetHistory">historique des fiches</string>
+    <string name="menu_sheetToProceed">Fiches à traiter</string>
+    <string name="menu_myProfil">Mon profil</string>
+    <string name="menu_accountManagement">Gestion des comptes</string>
+    <string name="menu_acManagement">Gestion des AC</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_front"
+    tools:context=".ui.menu.MenuFrontActivity"
+    app:startDestination="@+id/nav_home_front">
+
+    <fragment
+        android:id="@+id/nav_home_front"
+        android:name="com.example.safifees_v0.ui.homeFront.HomeFrontFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home_front" />
+    <fragment
+        android:id="@+id/nav_add_fees"
+        android:name="com.example.safifees_v0.ui.addFees.AddFeesFragment"
+        android:label="@string/menu_addFees"
+        tools:layout="@layout/fragment_add_fees" />
+    <fragment
+        android:id="@+id/nav_sheet_history"
+        android:name="com.example.safifees_v0.ui.sheetHistory.SheetHistoryFragment"
+        android:label="@string/menu_sheetHistory"
+        tools:layout="@layout/fragment_sheet_history" />
+    <fragment
+        android:id="@+id/nav_sheet_to_proceed"
+        android:name="com.example.safifees_v0.ui.sheetToProceed.SheetToProceedFragment"
+        android:label="@string/menu_sheetToProceed"
+        tools:layout="@layout/fragment_sheet_to_proceed" />
+    <fragment
+        android:id="@+id/nav_my_profil"
+        android:name="com.example.safifees_v0.ui.myProfil.MyProfilFragment"
+        android:label="@string/menu_myProfil"
+        tools:layout="@layout/fragment_my_profil" />
+</navigation>
