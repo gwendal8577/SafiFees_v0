@@ -35,7 +35,6 @@ class LoginActivity : AppCompatActivity() {
         val loading = findViewById<ProgressBar>(R.id.loading)
         val button_forgotPassword = findViewById<Button>(R.id.button_forgotPassword)
 
-
         loginViewModel = ViewModelProviders.of(this, LoginViewModelFactory())
             .get(LoginViewModel::class.java)
 
@@ -107,7 +106,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         login.setOnClickListener {
-            val intent = Intent(this,MenuFrontActivity::class.java)
+            val intent = Intent(this,MenuBackActivity::class.java)
             startActivity(intent)
         }
 

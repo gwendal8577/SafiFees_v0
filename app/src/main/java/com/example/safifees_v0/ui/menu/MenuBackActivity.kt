@@ -13,33 +13,32 @@ import androidx.appcompat.widget.Toolbar
 import androidx.navigation.ui.navigateUp
 import com.example.safifees_v0.R
 
-class MenuBackActivity : AppCompatActivity() {
+class MenuBackActivity() : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_menu_back)
         val toolbar: Toolbar = findViewById(R.id.toolbar_back)
         setSupportActionBar(toolbar)
-
         val drawerLayout: DrawerLayout = findViewById(R.id.MenuBackActivity)
         val navView: NavigationView = findViewById(R.id.nav_view_back)
+
         val navController = findNavController(R.id.nav_home_back)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
-
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_home_back,
-                R.id.nav_account_management,
                 R.id.nav_ac_management,
+                R.id.nav_account_management,
                 R.id.nav_my_profil
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-
     }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.

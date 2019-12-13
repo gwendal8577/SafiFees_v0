@@ -13,16 +13,16 @@ import androidx.appcompat.widget.Toolbar
 import androidx.navigation.ui.navigateUp
 import com.example.safifees_v0.R
 
-class MenuFrontActivity : AppCompatActivity() {
+class MenuFrontActivity() : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_menu_front)
         val toolbar: Toolbar = findViewById(R.id.toolbar_front)
         setSupportActionBar(toolbar)
-
         val drawerLayout: DrawerLayout = findViewById(R.id.MenuFrontActivity)
         val navView: NavigationView = findViewById(R.id.nav_view_front)
         val navController = findNavController(R.id.nav_home_front)
